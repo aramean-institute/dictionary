@@ -1,0 +1,12 @@
+{
+    "api": {
+        "dictionary": {
+            "endpoint": "https://fepmwokzjfhuyhyggktb.supabase.co/rest/v1/words",
+            "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTc4OTE1OCwiZXhwIjoxOTM3MzY1MTU4fQ.AhcMTJs8FwpE-CL_TvxGyQuo8E4PUjHhQ_qOshlv6BU"
+        },
+        "glotto": {
+            "endpoint": "https://fepmwokzjfhuyhyggktb.supabase.co/rest/v1/languages",
+            "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTc4OTE1OCwiZXhwIjoxOTM3MzY1MTU4fQ.AhcMTJs8FwpE-CL_TvxGyQuo8E4PUjHhQ_qOshlv6BU"
+        }
+    }
+}

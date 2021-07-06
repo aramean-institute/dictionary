@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" cache="no" debug="true">
+<head>
+    <title>Aramaic Dictionary</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge;ie=10;chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://dictionary.aramean.institute"/>
+    <meta property="og:type" content=""/>
+    <meta property="og:title" content="Aramaic Dictionary"/>
+    <meta property="og:description" content="The Aramaic Dictionary by Aramean Institute."/>
+    <meta property="og:image" content="https://dictionary.aramean.institute/assets/img/logo.png"/>
+    <base env="local:/;prod:/">
+    <link type="text/css" href="https://3el.github.io/front/dist/front.css" rel="stylesheet">
+    <link type="text/css" href="https://3el.github.io/front/theme/front.css" rel="stylesheet">
+    <script src="https://3el.github.io/front/dist/front.js" lib="popup;nav;json;filter;globalize" store="../../../assets/json/vars/api:api"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=HoGHbU9L" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="topbar bcwhite white white- h4 gap2-" selective="true">
+            <a class="pl1" href="./" key="0"><img class="h60" src="https://www.aramean.institute/assets/img/logo.png"></a>
+        </nav>
+    </header>
+
+    <main class="light p1 flc" id="main" include="home.html"></main>
+
+    <footer>
+        <div eventlistener="offline" eventaction="dom.create('div', ['id=offline', 'className=alert pf b1 l1 bcred white snack', 'innerHTML=<i class=icon>⚠</i> Connection lost...'], 'footer')"></div>
+        <div eventlistener="online" eventaction="dom.hide('offline')"></div>
+    </footer>
+</body>
+</html>
