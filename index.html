@@ -19,9 +19,19 @@
 <body>
 
     <header>
-        <nav class="topbar h4 gap2-" selective="true">
-            <a href="browse.html" class="pl2" key="2" globalize="browse"><i class="icon">&#8801;</i>Browse</a>
-            <a href="languages.html" class="fr pr2" key="3" globalize="languages"><i class="icon">&#127760;</i>Languages</a>
+        <nav class="topbar h4 gap2- pl1" selective="true">
+            <a href="browse.html" key="2" globalize="browse"><i class="icon">&#8801;</i>Browse</a>
+            <a href="#language" class="fr" key="3" globalize="languages"><i class="icon">&#127760;</i>{% userLanguage %}</a>
+            <div id="language" class="modal alert pauto">
+	            <h2 globalize="change_language">Change language</h2>
+	            <form class="gap105- mt1 tal" onsubmit="return false">
+                    <ul class="df fdc">
+                        <li><a href="#" onclick="globalizeChangeLanguage('sv-se')">{% userLanguage %}</a> (Förvald)</li>
+                        <li><a href="#" onclick="globalizeChangeLanguage('en')">Engelska</a></li>
+                    </ul>
+	            </form>
+            </div>
+            <a href="#" class="backdrop" target="_self"></a>
         </nav>
     </header>
 

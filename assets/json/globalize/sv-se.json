@@ -1,0 +1,9 @@
+{
+    "code": "sv-se",
+    "direction": "ltr",
+    "translations":
+        {
+            "all_dialects": "Alla dialekter",
+            "search": "Sök"
+        }
+}
