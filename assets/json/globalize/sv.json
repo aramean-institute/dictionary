@@ -6,6 +6,11 @@
         {
             "all_dialects": "Alla dialekter",
             "browse": "Bläddra",
+            "aramaic_modern": "Aramaic (Modern)",
+            "aramaic_middle": "Aramaic (Middle)",
+            "aramaic_late": "Aramaic (Late)",
+            "aramaic_old": "Aramaic (Old)",
+            "aramaic_imperial": "Aramaic (Imperial)",
             "search": "Sök"
         }
 }
