@@ -1,9 +1,11 @@
 {
-    "code": "sv-se",
+    "639-1": "sv",
+    "639-2": "swe",
     "direction": "ltr",
     "translations":
         {
             "all_dialects": "Alla dialekter",
+            "browse": "Bläddra",
             "search": "Sök"
         }
 }

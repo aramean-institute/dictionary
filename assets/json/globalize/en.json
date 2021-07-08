@@ -1,9 +1,11 @@
 {
-    "code": "en",
+    "639-1": "en",
+    "639-2": "eng",
     "direction": "ltr",
     "translations":
         {
             "all_dialects": "All dialects",
+            "browse": "Browse",
             "search": "Search"
         }
 }
