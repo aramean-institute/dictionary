@@ -1,0 +1,16 @@
+{
+    "639-1": "he",
+    "639-2": "heb",
+    "direction": "rtl",
+    "translations":
+        {
+            "all_dialects": "כל הניבים",
+            "browse": "לדפדף",
+            "aramaic_modern": "Aramaic (Modern)",
+            "aramaic_middle": "Aramaic (Middle)",
+            "aramaic_late": "Aramaic (Late)",
+            "aramaic_old": "Aramaic (Old)",
+            "aramaic_imperial": "Aramaic (Imperial)",
+            "search": "לחפש"
+        }
+}
