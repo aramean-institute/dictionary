@@ -4,6 +4,7 @@
     "direction": "rtl",
     "translations":
         {
+            "#language#": "עברית",
             "all_dialects": "כל הניבים",
             "browse": "לדפדף",
             "aramaic_modern": "Aramaic (Modern)",
@@ -11,6 +12,7 @@
             "aramaic_late": "Aramaic (Late)",
             "aramaic_old": "Aramaic (Old)",
             "aramaic_imperial": "Aramaic (Imperial)",
+            "change_the_language": "שנה את השפה",
             "search": "לחפש"
         }
 }

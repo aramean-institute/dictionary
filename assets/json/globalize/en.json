@@ -4,6 +4,7 @@
     "direction": "ltr",
     "translations":
         {
+            "#language#": "English",
             "all_dialects": "All dialects",
             "browse": "Browse",
             "aramaic_modern": "Aramaic (Modern)",
@@ -11,6 +12,7 @@
             "aramaic_late": "Aramaic (Late)",
             "aramaic_old": "Aramaic (Old)",
             "aramaic_imperial": "Aramaic (Imperial)",
+            "change_the_language": "Change the language",
             "search": "Search"
         }
 }

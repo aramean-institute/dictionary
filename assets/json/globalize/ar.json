@@ -4,6 +4,7 @@
     "direction": "rtl",
     "translations":
         {
+            "#language#": "العربية",
             "all_dialects": "كل اللهجات",
             "browse": "تصفح",
             "aramaic_modern": "Aramaic (Modern)",
@@ -11,6 +12,7 @@
             "aramaic_late": "Aramaic (Late)",
             "aramaic_old": "Aramaic (Old)",
             "aramaic_imperial": "Aramaic (Imperial)",
+            "change_the_language": "تغيير اللغة",
             "search": "بحث"
         }
 }

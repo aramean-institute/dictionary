@@ -4,6 +4,7 @@
     "direction": "ltr",
     "translations":
         {
+            "#language#": "Svenska",
             "all_dialects": "Alla dialekter",
             "browse": "Bläddra",
             "aramaic_modern": "Arameiska (Modern)",
@@ -11,6 +12,7 @@
             "aramaic_late": "Arameiska (Sen)",
             "aramaic_old": "Arameiska (Forn)",
             "aramaic_imperial": "Arameiska (Imperialistisk)",
+            "change_the_language": "Ändra språk",
             "search": "Sök"
         }
 }
