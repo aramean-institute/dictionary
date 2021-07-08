@@ -6,11 +6,11 @@
         {
             "all_dialects": "All dialects",
             "browse": "Browse",
-            "aramaic_modern": "Arameiska (Modern)",
-            "aramaic_middle": "Arameiska (Medel)",
-            "aramaic_late": "Arameiska (Sen)",
-            "aramaic_old": "Arameiska (Forn)",
-            "aramaic_imperial": "Arameiska (Imperialistisk)",
+            "aramaic_modern": "Aramaic (Modern)",
+            "aramaic_middle": "Aramaic (Middle)",
+            "aramaic_late": "Aramaic (Late)",
+            "aramaic_old": "Aramaic (Old)",
+            "aramaic_imperial": "Aramaic (Imperial)",
             "search": "Search"
         }
 }
