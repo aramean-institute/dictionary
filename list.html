@@ -1,7 +1,7 @@
 <section class="w100 grid" json="words" storage="api">
-    <div id="words" class="main box cards list br0-" iterate="true" datasource="{{ storage:api.dictionary.endpoint }}?select=*&word->>{% userLanguage %}=ilike.{# inputWord = toLower = trim #}*" dataheader="{{ storage:api.dictionary.headers }}">
+    <div id="words" class="main box cards list br0-" iterate="true" datasource="{{ storage:api.dictionary.endpoint }}?select=*&word->>{% localeCode %}=ilike.{# inputWord = toLower = trim #}*" dataheader="{{ storage:api.dictionary.headers }}">
         <figure class="p1 bcwhite">
-            <p class="f2 pl1" jsonget="word.{% userLanguage %}"></p>
+            <p class="f2 pl1" jsonget="word.{% localeCode %}"></p>
             <p class="tar">{{ jsonget:word.syr }}<a class="icon pl1" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a></p>
         </figure>
     </div>
