@@ -2,11 +2,6 @@
 
 <title>Word</title>
 
-<template>
-    <aside index="0"></aside>
-    <aside index="1"></aside>
-</template>
-
 <article class="wc_xl pauto" storage="api" json="words" bind3="words:?id">
     <section id="words" datasource="{{ storage:api.dictionary.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.dictionary.headers }}">
         <h1>Word</h1>
