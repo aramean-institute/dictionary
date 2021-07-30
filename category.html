@@ -1,6 +1,6 @@
 <script src="https://3el.github.io/front/dist/front.js" template="true"></script>
 
-<section class="wc_xl" json="words" storage="api" bind3="words:?id">
+<section class="wc_xl pauto" json="words" storage="api" bind3="words:?id">
     <h1 class="z08">Category</h1>
     <div id="words" class="box cards list mt05 br0- flc-" iterate="true" datasource="{{ storage:api.dictionary.endpoint }}?select=*&or=(id.eq.{# ?id #},taxonomy.eq.{# ?id #})" dataheader="{{ storage:api.dictionary.headers }}" onerror="alert('Fetch error')" onsuccess="alert('Fetch OK')" datasourceonchange="json">
         <figure class="p1 bcwhite">
