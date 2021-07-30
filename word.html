@@ -13,21 +13,26 @@
             </ol>
         </nav>
         <div class="box cards list mt1 br0- flc-">
+
+            <h6 class="p1 bcwhitesmoke black08 fwb" if="{{ jsonget:word.syc }};undefined;hide">Aramaic (Suryaya)</h6>
+            <figure class="p1 bcwhite" if="{{ jsonget:word.syc }};undefined;hide">
+                <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syc }}</p>
+            </figure>
+
             <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Suryoyo)</h6>
-            
-            <figure class="p1 bcwhite df fdr">
+            <figure class="p1 bcwhite">
                 <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syr }}</p>
             </figure>
             
             <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Surayt)</h6>
             
-            <figure class="p1 bcwhite df fdr">
+            <figure class="p1 bcwhite">
                 <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syt }}</p>
             </figure>
 
             <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Sureth)</h6>
             
-            <figure class="p1 bcwhite df fdr">
+            <figure class="p1 bcwhite">
                 <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syh }}</p>
             </figure>
 
