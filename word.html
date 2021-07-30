@@ -1,0 +1,27 @@
+<script src="https://3el.github.io/front/dist/front.js" template="index"></script>
+
+<title>Person</title>
+
+<template>
+    <aside index="0"></aside>
+    <aside index="1"></aside>
+</template>
+
+<article class="wc_xl" storage="api" json="words" bind3="words:?id">
+    <section id="words" datasource="{{ storage:api.dictionary.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.dictionary.headers }}">
+        <h1>Word</h1>
+        <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
+            <ol class="pl05">
+                <li><a href="./" globalize="dictionary">Dictionary</a></li>
+                <li><a href="word.html">Word</a></li>
+                <li jsonget="word.{% localeCode %}"></li>
+            </ol>
+        </nav>
+        <div class="box cards list mt1 br0- flc-">
+            <h6 class="p1 bcwhitesmoke black08 fwb">{{ jsonget:first_name.swe }}</h6>
+            <figure class="p1 bcwhite">
+                <p>First name: {{ jsonget:first_name.swe }}
+            </figure>
+        </div>
+    </section>
+</article>
