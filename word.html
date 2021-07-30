@@ -7,7 +7,7 @@
     <aside index="1"></aside>
 </template>
 
-<article class="wc_xl" storage="api" json="words" bind3="words:?id">
+<article class="wc_xl pauto" storage="api" json="words" bind3="words:?id">
     <section id="words" datasource="{{ storage:api.dictionary.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.dictionary.headers }}">
         <h1>Word</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
