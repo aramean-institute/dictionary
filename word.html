@@ -4,7 +4,7 @@
 
 <article class="wc_xl pauto" storage="api" json="words" bind3="words:?id">
     <section id="words" datasource="{{ storage:api.dictionary.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.dictionary.headers }}">
-        <h1>Word</h1>
+        <h1>{{ jsonget:word.eng }}</h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
                 <li><a href="./" globalize="dictionary">Dictionary</a></li>
@@ -13,10 +13,24 @@
             </ol>
         </nav>
         <div class="box cards list mt1 br0- flc-">
-            <h6 class="p1 bcwhitesmoke black08 fwb">{{ jsonget:word.eng }}</h6>
-            <figure class="p1 bcwhite">
-                <p>{{ jsonget:word.arc }}
+            <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Suryoyo)</h6>
+            
+            <figure class="p1 bcwhite df fdr">
+                <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syr }}</p>
             </figure>
+            
+            <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Surayt)</h6>
+            
+            <figure class="p1 bcwhite df fdr">
+                <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syt }}</p>
+            </figure>
+
+            <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Sureth)</h6>
+            
+            <figure class="p1 bcwhite df fdr">
+                <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syh }}</p>
+            </figure>
+
         </div>
     </section>
 </article>
