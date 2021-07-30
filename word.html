@@ -4,7 +4,7 @@
 
 <article class="wc_xl pauto" storage="api" json="words" bind3="words:?id">
     <section id="words" datasource="{{ storage:api.dictionary.endpoint }}?select=*&or=(id.eq.{# ?id #})" dataheader="{{ storage:api.dictionary.headers }}">
-        <h1>{{ jsonget:word.eng }}</h1>
+        <h1 jsonget="word.{% localeCode %}"></h1>
         <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
             <ol class="pl05">
                 <li><a href="./" globalize="dictionary">Dictionary</a></li>
