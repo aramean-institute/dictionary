@@ -16,24 +16,24 @@
 
             <h6 class="p1 bcwhitesmoke black08 fwb" if="{{ jsonget:word.syc }};undefined;hide">Aramaic (Suryaya)</h6>
             <figure class="p1 bcwhite" if="{{ jsonget:word.syc }};undefined;hide">
-                <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syc }}</p>
+                <p><a class="icon" if="{{ jsonget:speech.syc }};;hide:true" onclick="responsiveVoice.speak('{{ jsonget:speech.syc.txt }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syc }}</p>
             </figure>
 
             <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Suryoyo)</h6>
             <figure class="p1 bcwhite">
-                <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syr }}</p>
+                <p><a class="icon" if="{{ jsonget:speech.syr.txt }};;hide:true" onclick="responsiveVoice.speak('{{ jsonget:speech.syr.txt }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syr }}</p>
             </figure>
             
             <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Surayt)</h6>
             
             <figure class="p1 bcwhite">
-                <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syt }}</p>
+                <p><a class="icon" if="{{ jsonget:speech.syt.txt }};;hide:true" onclick="responsiveVoice.speak('{{ jsonget:speech.syt.txt }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syt }}</p>
             </figure>
 
             <h6 class="p1 bcwhitesmoke black08 fwb">Aramaic (Sureth)</h6>
             
             <figure class="p1 bcwhite">
-                <p><a class="icon" if="{{ jsonget:word.syr_lat }};undefined;hide:true" onclick="responsiveVoice.speak('{{ jsonget:word.syr_lat }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syh }}</p>
+                <p><a class="icon" if="{{ jsonget:speech.syh.txt }};;hide:true" onclick="responsiveVoice.speak('{{ jsonget:speech.syh.txt }}', 'Arabic Female', {rate: .8})">&#128264;</a>{{ jsonget:word.syh }}</p>
             </figure>
 
         </div>
