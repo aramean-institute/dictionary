@@ -1,9 +1,8 @@
 <section class="wc_xl" json="words" storage="api">
     <div id="words" class="main box cards list br0-" iterate="true" datasource="{{ storage:api.dictionary.endpoint }}?select=*&word->>{% localeCode %}=ilike.{# inputWord = toLower = trim #}*" dataheader="{{ storage:api.dictionary.headers }}" onempty="dom.show('result')" onstart="dom.hide('result')">
         <a href="word.html?id={{ jsonget:id }}">
-            <figure class="p1 bcwhite">
+            <figure class="p1 bcwhite bcblack001_h">
                 <p class="f2 pl1" jsonget="word.{% localeCode %}"></p>
-                <p class="tar"></p>
             </figure>
         </a>
     </div>
