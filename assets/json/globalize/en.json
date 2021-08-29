@@ -12,6 +12,7 @@
             "aramaic_old": "Aramaic (Old)",
             "aramaic_imperial": "Aramaic (Imperial)",
             "change_the_language": "Change the language",
-            "search": "Search"
+            "search": "Search",
+            "no_results_found_for_0": "No results found for <b>{0}</b>"
         }
 }

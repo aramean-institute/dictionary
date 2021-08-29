@@ -12,6 +12,7 @@
             "aramaic_old": "Aramaic (Old)",
             "aramaic_imperial": "Aramaic (Imperial)",
             "change_the_language": "שנה את השפה",
-            "search": "לחפש"
+            "search": "לחפש",
+            "no_results_found_for_0": "לא נמצאו תוצאות עבור <b>{0}</b>"
         }
 }

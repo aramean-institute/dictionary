@@ -12,6 +12,7 @@
             "aramaic_old": "Arameiska (Forn)",
             "aramaic_imperial": "Arameiska (Imperialistisk)",
             "change_the_language": "Ändra språk",
-            "search": "Sök"
+            "search": "Sök",
+            "no_results_found_for_0": "Inga resultat hittades för <b>{0}</b>"
         }
 }
