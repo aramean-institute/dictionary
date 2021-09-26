@@ -6,6 +6,7 @@
             "#language#": "עברית",
             "all_dialects": "כל הניבים",
             "browse": "לדפדף",
+            "dictionary": "מילון",
             "aramaic_modern": "Aramaic (Modern)",
             "aramaic_middle": "Aramaic (Middle)",
             "aramaic_late": "Aramaic (Late)",
@@ -13,6 +14,7 @@
             "aramaic_imperial": "Aramaic (Imperial)",
             "change_the_language": "שנה את השפה",
             "search": "לחפש",
-            "no_results_found_for_0": "לא נמצאו תוצאות עבור <b>{0}</b>"
+            "no_results_found_for_0": "לא נמצאו תוצאות עבור <b>{0}</b>",
+            "word": "מילים"
         }
 }

@@ -6,6 +6,7 @@
             "#language#": "العربية",
             "all_dialects": "كل اللهجات",
             "browse": "تصفح",
+            "dictionary": "قاموس",
             "aramaic_modern": "Aramaic (Modern)",
             "aramaic_middle": "Aramaic (Middle)",
             "aramaic_late": "Aramaic (Late)",
@@ -13,6 +14,7 @@
             "aramaic_imperial": "Aramaic (Imperial)",
             "change_the_language": "تغيير اللغة",
             "search": "بحث",
-            "no_results_found_for_0": "لم يتم العثور على نتائج لـ <b>{0}</b>"
+            "no_results_found_for_0": "لم يتم العثور على نتائج لـ <b>{0}</b>",
+            "word": "كلمات"
         }
 }
