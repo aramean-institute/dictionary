@@ -1,12 +1,12 @@
 {
     "api": {
         "dictionary": {
-            "endpoint": "https://fepmwokzjfhuyhyggktb.supabase.co/rest/v1/words",
-            "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTc4OTE1OCwiZXhwIjoxOTM3MzY1MTU4fQ.AhcMTJs8FwpE-CL_TvxGyQuo8E4PUjHhQ_qOshlv6BU;Prefer:count=exact"
+            "endpoint": "https://cehhbnpbfqgkyyggvkic.supabase.co/rest/v1/words",
+            "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNlaGhibnBiZnFna3l5Z2d2a2ljIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjI0Nzk4ODUsImV4cCI6MTk3ODA1NTg4NX0.GSpPsOgT3fPqapeBW1EdVLqRgHk-mxYJAfdA6hsGbZ0;Prefer:count=exact"
         },
         "glotto": {
-            "endpoint": "https://fepmwokzjfhuyhyggktb.supabase.co/rest/v1/languages",
-            "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYyMTc4OTE1OCwiZXhwIjoxOTM3MzY1MTU4fQ.AhcMTJs8FwpE-CL_TvxGyQuo8E4PUjHhQ_qOshlv6BU"
+            "endpoint": "https://cehhbnpbfqgkyyggvkic.supabase.co/rest/v1/languages",
+            "headers": "apikey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNlaGhibnBiZnFna3l5Z2d2a2ljIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjI0Nzk4ODUsImV4cCI6MTk3ODA1NTg4NX0.GSpPsOgT3fPqapeBW1EdVLqRgHk-mxYJAfdA6hsGbZ0"
         }
     }
 }
