@@ -1,46 +1,118 @@
 <!doctype html>
-<html lang="en-us;auto" cache="no" debug="true">
+<html lang="en">
+
 <head>
-    <title>Aramaic Dictionary</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge;ie=10;chrome=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:url" content="https://dictionary.aramean.institute"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Aramaic Dictionary"/>
-    <meta property="og:description" content="The Aramaic Dictionary by Aramean Institute."/>
-    <meta property="og:image" content="https://dictionary.aramean.institute/assets/img/logo.png"/>
-    <base env="local:/;prod:/">
-    <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
-    <link type="text/css" href="https://cdn.front.nu/dist/design/front/theme/front.css" rel="stylesheet">
-    <script src="https://cdn.front.nu/dist/front.js" lib="nav;json;filter;globalize" plug="responsivevoice" store="./assets/json/vars/api:api"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="version" content="1.0.0">
+  <script
+    src="https://cdn.front.nu/nightly/front.js"
+    module="globalize;chronotize;data;navigate;keyboard"
+    var="api;enum"
+    conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:dictionary;frontSrcLocal:../../front/front.js"
+    globalize-conf="folder:assets/json/locales"
+    navigate-conf="startpage:experimental/app/dictionary;startpageLocal:app/dictionary">
+  </script>
+  <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="icon" href="data:,">
+  <title globalize-get="title">Aramaic Dictionary</title>
 </head>
-<body>
 
-    <header>
-        <nav class="topbar h4 gap1- pl1" selective="true">
-            <a href="categories.html" globalize="browse"><i class="icon">&#8801;</i>Browse</a>
-            <a href="#language" class="fr" globalize="#language#"><i class="icon">&#127760;</i>.</a>
-            <div id="language" class="modal alert wc_xm lg_w90p pauto">
-	            <h2 globalize="change_the_language"></h2>
-	            <form class="gap105- mt3 ltr tal">
-                    <ul class="df fdc gaph2-">
-                        <li><a href="#" onclick="globalizeChangeLanguage('en-us')">English (US)</a></li>
-                        <li><a href="#" onclick="globalizeChangeLanguage('sv-se')">Svenska</a></li>
-                        <li><a href="#" onclick="globalizeChangeLanguage('he-is')">עברית</a></li>
-                        <li><a href="#" onclick="globalizeChangeLanguage('ar')">العربية</a></li>
-                    </ul>
-	            </form>
-            </div>
-            <a href="#" class="backdrop" target="_self"></a>
-        </nav>
-    </header>
-
-    <main class="flc" id="main" include="home.html"></main>
-
-    <footer>
-        <div eventlistener="offline" eventaction="dom.create('div', ['id=offline', 'className=alert pf b1 l1 bcred white snack', 'innerHTML=<i class=icon>⚠</i> Connection lost...'], 'footer')"></div>
-        <div eventlistener="online" eventaction="dom.hide('offline')"></div>
-    </footer>
+<body class="light">
+  <div id="navloader" class="navloader pa t0 w100 bcblack03 h2px" hide><div class="bcblack08"></div></div>
+  <header>
+    <select name="language" class="p1 m0a fs08 tac" onvaluechange="globalize-set">
+      <option selected disabled globalize-get>Change language</option>
+      <option value="sv">Svenska</option>
+      <option value="en">English (US)</option>
+      <option value="arc">𐡀𐡓𐡌𐡉𐡀</option>
+      <option value="syc">ܐܪܡܝܐ</option>
+      <option value="am">አማርኛ</option>
+    </select>
+  </header>
+  <aside></aside>
+  <main class="bcwhite flc">
+    <article class="df p1 fdc wc_xm">
+      <section>
+        <div class="tac w100">
+          <img class="br50 w4r mb05 bos2 red bw3 shade2 hue-rotate m0a" src="https://www.aramean.institute/favicon.ico">
+          <h1 class="z09 dimgray" globalize-get="title">Aramaic Dictionary</h1>
+        </div>
+        <form id="form" method="get" action="search.html" target="_top" class="mt1 mb5 pr">
+          <input
+            type="text"
+            name="q"
+            id="q"
+            class="bs1 p1 h3 br05 dark white w100 w100 pr3 bs0"
+            globalize-get="input_search"
+            globalize-target="placeholder"
+            onsetvalue="focus"
+            onfocused="select:[0,10]"
+            autocomplete="off"
+            focus>
+          <input
+            type="submit"
+            class="bos0 bc0 white p1 h3 br05 w4 icon icon16 pa r0"
+            value="&#128269;">
+          <!--<select name="dialects" class="tac z07 mt1">
+            <option value="" globalize-get>All dialects</option>
+            <optgroup globalize-get="aramaic_modern" globalize-target="label">
+              <option value="syr">Suryoyo (Standard)</option>
+              <option value="syt">Surayt (Standard West)</option>
+              <option value="syh">Suret (Standard East)</option>
+              <option value="syn">Soray - Senaya</option>
+              <option value="hrt">Soreth - Hertevin</option>
+              <option value="bhn">Soreth - Gardabani</option>
+              <option value="kqd">Surat - Koy Sanjaq</option>
+              <option value="lhs">Suryo - Mlaḥsô</option>
+              <option value="amw">Aromay - Maaloula</option>
+              <option value="bjf">Lishanid - Barzani</option>
+              <option value="lsd">Lishana Deni - Trans-Zab</option>
+              <option value="trg">Lishana Didan - Trans-Zab</option>
+              <option value="huy">Lishana Noshan - Trans-Zab</option>
+            </optgroup>
+            <optgroup label="Arameiska (Sen)" globalize-get="aramaic_late" globalize-target="label">
+              <option value="syr">Suryaya - Edessa</option>
+              <option value="">Palmyrenian</option>
+              <option value="qly">Arami - Hatran</option>
+              <option value="qhy">Aramu - Nabatean</option>
+            </optgroup>
+            <optgroup label="Arameiska (Medel)" globalize-get="aramaic_middle" globalize-target="label">
+              <option value="tmr">Aramaya - Babylon</option>
+              <option value="syc">Aramaya - Edessa</option>
+              <option value="">Chazal</option>
+            </optgroup>
+            <optgroup label="Arameiska (Imperialistisk)" globalize-get="aramaic_imperial" globalize-target="label">
+              <option value="arc">Aramaya - Assur</option>
+            </optgroup>
+            <optgroup label="Arameiska (Forn)" globalize-get="aramaic_old" globalize-target="label">
+              <option value="oar">Alamaya - Sam'al</option>
+            </optgroup>
+          </select>-->
+          <div class="m0a z07 jcc tac" margintop="2rem" style="flex-wrap: wrap">
+            <a
+              class="aic p05 shade1 bclinen"
+              click="data-reqget"
+              paddingright="1rem"
+              bindasset="apikey:api.api_key;endpoint:api.word_random.endpoint"
+              data-header="apikey:{apikey};Accept:application/vnd.pgrst.object+json"
+              data-reqget="{endpoint}"
+              ondata-reqget="log:[ondata-reqget]"
+              data-onbeforesuccess="data-set:[word:id];setaction:#form:[word.html];setname:#q:[i]"
+              data-onaftersuccess="setvalue:#q:[{word}];submit:[form[0]]"
+            >
+              <i class="icon icon24" marginright="5">&#127922;</i> <span globalize-get>Randomize word</span>
+            </a>
+            <a class="aic p05 shade1 bcsnow" paddingright="1rem" href="word-of-the-day.html">
+              <i class="icon icon24" marginright="5">&#128293;</i> <span globalize-get>Word of the Day</span>
+            </a>
+          </div>
+        </form>
+      </section>
+    </article>
+  </main>
+  <aside ontoggle="toggle.class[pf t0 r0 h100p zi50]" class="dark *_dn"></aside>
+  <footer></footer>
 </body>
+
 </html>

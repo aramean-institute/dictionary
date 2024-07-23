@@ -1,0 +1,32 @@
+{
+  "name": "Svenska",
+  "code": "swe",
+  "direction": "ltr",
+  "translations": {
+    "Change language": "Byt språk",
+    "All dialects": "Alla dialekter",
+    "aramaic_modern": "Arameiska (Modern)",
+    "aramaic_middle": "Arameiska (Medel)",
+    "aramaic_late": "Arameiska (Sen)",
+    "aramaic_old": "Arameiska (Forn)",
+    "aramaic_imperial": "Arameiska (Imperialistisk)",
+    "Browse": "Bläddra",
+    "Browse by category": "Bläddra efter kategori",
+    "Dictionary": "Ordbok",
+    "Word": "Ord",
+    "Language": "Språk",
+    "Swedish": "Svenska",
+    "Categories": "Kategorier",
+    "Randomize word": "Slumpa ord",
+    "title": "Arameisk Ordbok",
+    "input_search": "Sök efter ord...",
+    "Word of the Day": "Dagens ord",
+    "Go-to Word": "Gå till ord",
+    "amw": "Aromay",
+    "oar": "Aramaya",
+    "syc": "Suryaya",
+    "syh": "Suret",
+    "syr": "Suryoyo",
+    "syt": "Surayt"
+  }
+}

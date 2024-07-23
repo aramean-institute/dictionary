@@ -1,0 +1,25 @@
+{
+  "name": "English",
+  "code": "eng",
+  "direction": "ltr",
+  "translations": {
+    "Change language": "Change language",
+    "All dialects": "All dialects",
+    "aramaic_modern": "Aramaic (Modern)",
+    "aramaic_middle": "Aramaic (Middle)",
+    "aramaic_late": "Aramaic (Late)",
+    "aramaic_old": "Aramaic (Old)",
+    "aramaic_imperial": "Aramaic (Imperial)",
+    "Browse": "Browse",
+    "Browse by category": "Browse by category",
+    "Categories": "Categories",
+    "title": "Aramaic Dictionary",
+    "input_search": "Search for words...",
+    "Go-to Word": "Go-to Word",
+    "oar": "Aramaya",
+    "syc": "Suryaya",
+    "syh": "Suret",
+    "syr": "Suryoyo",
+    "syt": "Surayt"
+  }
+}
