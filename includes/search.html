@@ -5,7 +5,7 @@
   bindasset="apikey:api.api_key"
   bindquery="q:q;c:category"
   bindglobal="l:globalize.code"
-  ifbeforeend="{c};data-src:&or=(id.eq.{c},taxonomy.eq.{c})"
+  ifbeforeend="{c};data-src:,id.eq({c})|taxonomy.eq({c})"
   data-src="{src}"
   data-header="apikey:{apikey};Prefer:count=exact"
   data-loader="#loader"
