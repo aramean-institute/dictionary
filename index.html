@@ -38,7 +38,8 @@
           <img class="br50 w4r mb05 bos2 red bw3 shade2 hue-rotate m0a" src="https://www.aramean.institute/favicon.ico">
           <h1 class="z09 dimgray" globalize-get="title">Aramaic Dictionary</h1>
         </div>
-        <form id="form" method="get" action="search.html" target="_top" class="mt1 mb5 pr">
+        <form id="form" method="get" action="search.html" onformsubmit="setname:#i:[]" target="_top" class="mt1 mb5 pr">
+          <input type="hidden" id="i">
           <input
             type="text"
             name="q"
@@ -98,8 +99,8 @@
               data-header="apikey:{apikey};Accept:application/json+single"
               data-reqget="{endpoint}&order=random()&limit=1"
               ondata-reqget="log:[ondata-reqget]"
-              data-onbeforesuccess="data-set:[word:id];setaction:#form:[word.html];setname:#q:[i]"
-              data-onaftersuccess="setvalue:#q:[{word}];submit:[form[0]]"
+              data-onbeforesuccess="data-set:[word:id];setaction:#form:[word.html];setname:#i:[i]"
+              data-onaftersuccess="setvalue:#i:[{word}];submit:[form[0]]"
             >
               <i class="icon icon24" marginright="5">&#127922;</i> <span globalize-get>Randomize word</span>
             </a>
