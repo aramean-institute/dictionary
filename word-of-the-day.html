@@ -1,12 +1,12 @@
 <script src="https://cdn.front.nu/nightly/front.js"></script>
 <title globalize-get>Word of the Day</title>
-<meta property="og:title" content="Word of the Day" />
+<meta property="og:title" content="Aramaic Word of the Day" />
 <meta property="og:description" content="See how it's written and pronounced in different Aramaic dialects." />
 <meta property="og:image" content="assets/img/fb_share.png" />
 <template srcdoc="../index" src="../_templates/search"></template>
-<article id="success" class="wc_xl" bindquery="i:i" bindasset="apikey:api.api_key;endpoint:api.word_of_the_day.endpoint"
+<article class="wc_xl" bindquery="i:i" bindasset="apikey:api.api_key;endpoint:api.word_of_the_day.endpoint"
   bindglobal="l:globalize.code" data-src="{endpoint}" data-header="Accept:application/json+single"
-  data-status="406;#status406" data-onerror="hide:#success" data-loader="#loader" globalize-onsetload="rerun">
+  data-status="406;#status406" data-onerror="hide:*article" data-loader="#loader" globalize-onsetload="rerun">
   <section>
     <h1 globalize-get seold--desc>Word of the Day</h1>
     <h2 chronotize-get="F d, Y" marginbottom="2rem"></h2>
