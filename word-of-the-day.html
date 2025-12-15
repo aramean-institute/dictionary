@@ -8,12 +8,12 @@
   bindglobal="l:globalize.code" data-src="{endpoint}" data-header="Accept:application/json+single"
   data-status="406;#status406" data-onerror="hide:#success" data-loader="#loader" globalize-onsetload="rerun">
   <section>
-    <h1 globalize-get>Word of the Day</h1>
+    <h1 globalize-get seold--desc>Word of the Day</h1>
     <h2 chronotize-get="F d, Y" marginbottom="2rem"></h2>
     <div class="bcwhite bos6 bocblack01 bw1 br05">
       <a data-set="id:id" href="word.html?i={id}" class="df fdc br05" mouseover="bgcolor:[snow]"
-        mouseout="bgcolor:[initial]" padding="1rem">
-        <h2 class="tac z15" margintop="2rem" bindglobal="l:globalize.code" data-get="word.{l}">[Word]</h2>
+        mouseout="bgcolor:[initial]" padding="1rem" seold--url>
+        <h2 class="tac z15" margintop="2rem" bindglobal="l:globalize.code" data-get="word.{l}" seold--name>[Word]</h2>
         <hr class="shade2" margintop="1rem">
         <p class="fs09 mt05" paddingleft=".5rem">
           <span globalize-get>Learn what</span> "<b bindglobal="l:globalize.code" data-get="word.{l}">[Word]</b>"
@@ -31,8 +31,8 @@
   <div id="status406" class="tac" hide>
     <img class="br50 m0a w10r h10r bos2 bcred red bw3 shade1 hue-rotate mb2"
       src="https://www.aramean.institute/assets/img/syriac_aramean_tell_halaf_flag.svg">
-    <b zoom="2">Word not found</b>
+    <b zoom="2" globalize-get>Word not found</b>
     <hr>
   </div>
-  <div id="loader" class="loader"></div>
+  <div id="loader" class="loader" hide></div>
 </article>
